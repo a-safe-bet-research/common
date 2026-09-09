@@ -1,0 +1,69 @@
+# ---- A Safe Bet: block confidential, participant-level and operator data ----
+
+# Raw data never enters the repository
+data/raw/*
+!data/raw/placeholder.md
+
+# Data file types anywhere in the repository, except in data/derived/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.sav
+*.dta
+*.rds
+*.RData
+*.rda
+*.parquet
+*.feather
+*.sqlite
+*.db
+*.json
+*.zip
+*.7z
+!data/derived/**
+!materials/**/*.xlsx
+!materials/**/*.csv
+
+# Anything named after an operator or platform
+*[Ss]un[Vv]egas*
+*[Pp]laytech*
+*[Hh]olland[Cc]asino*
+*[Hh]olland_[Cc]asino*
+*HC_*
+*_HC*
+
+# Anything that looks like player, customer or account level
+*player_level*
+*customer*
+*account_level*
+*_raw_*
+
+# Credentials and configuration
+.Renviron
+.env
+*.env
+config.yml
+config.yaml
+secrets*
+credentials*
+*.pem
+*.key
+*_token*
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+renv/library/
+renv/staging/
+
+# Quarto and RMarkdown intermediates
+*_cache/
+*_files/
+/.quarto/
+
+# System
+.DS_Store
+Thumbs.db
