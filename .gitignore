@@ -4,6 +4,12 @@
 data/raw/*
 !data/raw/placeholder.md
 
+# Pipeline working directories (the POC pipeline writes to results/, logs/ and poc_output*/)
+results/
+logs/
+poc_output*/
+*.log
+
 # Data file types anywhere in the repository, except in data/derived/
 *.csv
 *.tsv
@@ -14,30 +20,72 @@ data/raw/*
 *.rds
 *.RData
 *.rda
+*.qs
+*.fst
 *.parquet
 *.feather
+*.arrow
 *.sqlite
 *.db
+*.duckdb
+*.duckdb.wal
 *.json
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.h5
+*.hdf5
 *.zip
 *.7z
+*.tar
+*.tar.gz
+*.gz
 !data/derived/**
 !materials/**/*.xlsx
 !materials/**/*.csv
+!protocol/**/*.xlsx
+!protocol/**/*.csv
+!outputs/tables/**/*.csv
+
+# Audio, video and transcript files (interview and focus group recordings)
+*.mp3
+*.m4a
+*.wav
+*.aac
+*.mp4
+*.mov
+*.vtt
+*.srt
 
 # Anything named after an operator or platform
 *[Ss]un[Vv]egas*
+*[Ss]un_[Vv]egas*
 *[Pp]laytech*
 *[Hh]olland[Cc]asino*
 *[Hh]olland_[Cc]asino*
 *HC_*
 *_HC*
+*_VF_*
+*VF_*
+*_VF.*
 
 # Anything that looks like player, customer or account level
 *player_level*
 *customer*
 *account_level*
 *_raw_*
+*poc_raw*
+*poc_analytical*
+*_LOCKED*
+*poc_synthetic*
+*poc_tool_assignments*
+*all_tool_assignments*
+*_lookup_periods*
+*kafka*
+*betbuddy_*
+*[Cc]rosswalk*
+*manifest.txt
 
 # Credentials and configuration
 .Renviron
@@ -58,6 +106,8 @@ credentials*
 .Ruserdata
 renv/library/
 renv/staging/
+renv/local/
+renv/cellar/
 
 # Quarto and RMarkdown intermediates
 *_cache/
@@ -67,3 +117,4 @@ renv/staging/
 # System
 .DS_Store
 Thumbs.db
+~$*
