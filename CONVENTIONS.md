@@ -6,11 +6,11 @@ These rules apply to every repository in the `a-safe-bet-research` organisation.
 
 | Where | What |
 |---|---|
-| OSF Registries | Preregistrations. Registered before data access or analysis; never edited afterwards. |
+| OSF Registries | Preregistrations. Registered before the confirmatory analyses are run on the real data; never edited afterwards. |
 | Preprint server | The manuscript before publication. Not stored in any repository. |
 | GitHub (this organisation) | Working code, documentation and shareable materials, under version control. |
 | Zenodo | A fixed, DOI-stamped copy of a repository at each submission and publication. |
-| Data repository | Research data, held separately. Never in GitHub. |
+| Data repository | Research data, held separately. Never in GitHub, except the aggregate or synthetic derived data allowed under section 7. |
 
 The OSF projects created before September 2026 are a frozen historical record. Nothing on them is renamed or removed. New material goes to GitHub.
 
@@ -18,7 +18,7 @@ The OSF projects created before September 2026 are a frozen historical record. N
 
 One repository per study, named for its content in lowercase with hyphens: `framework`, `poc`, `player-perspectives`. No paper numbers, no dates, no author names. Programme-level material goes in `common`.
 
-Repositories start private. A repository becomes public when the associated manuscript is submitted, unless the operator agreements or ethics approval require otherwise. Only organisation owners change visibility.
+Repositories start private. A repository becomes public when the associated manuscript is submitted. Only organisation owners change visibility.
 
 ## 3. Folders
 
@@ -51,6 +51,7 @@ Analyses are R projects. Each `code/` folder contains an `renv.lock` (or the equ
 - Participant-level or account-level data in any form, including pseudonymised
 - Operator exports, extracts, or files named after an operator
 - Credentials, tokens, connection strings, server paths
+- The internal rename crosswalk that maps operator schema names to the project's neutral names
 - Anything covered by a data-sharing agreement that has not passed the data review
 
 The `.gitignore` blocks these by folder, file type and name pattern. It is a safety net, not the rule. Before every commit, check the file list. If in doubt, the file goes in `data/raw/`, which is ignored.
@@ -77,7 +78,7 @@ Every `v1.0.0` and later tag is a GitHub Release, which Zenodo archives automati
 ## 10. Licences
 
 Code (`code/`): PolyForm Noncommercial 1.0.0, in `LICENSE-code.md`.
-Everything else: CC BY-NC 4.0, in `LICENSE-materials.md`.
+Everything else: CC BY-NC-SA 4.0, in `LICENSE-materials.md`.
 Copyright holder: Erasmus University Rotterdam. Commercial licences on request via gamblingresearch@essb.eur.nl. Individual files may carry a more permissive licence if stated in the file.
 
 ## 11. Ownership and access
