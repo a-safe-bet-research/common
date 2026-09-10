@@ -14,11 +14,11 @@ This repository holds material that belongs to the A Safe Bet programme as a who
 
 ## The programme
 
-A Safe Bet develops and evaluates a player-tailored responsible gambling framework. Its stages are: a scoping review and taxonomy of responsible gambling tools and the Responsible Gambling Intervention Framework built from it ([`framework`](https://github.com/a-safe-bet-research/framework)); jurisdiction-specific implementation architectures for the United Kingdom and the Netherlands ; and a preregistered proof-of-concept implementation on a live online gambling platform ([`poc`](https://github.com/a-safe-bet-research/poc)).
+A Safe Bet develops and evaluates a player-tailored responsible gambling framework. Its stages are: a scoping review and taxonomy of responsible gambling tools and the Responsible Gambling Intervention Framework built from it ([`framework`](https://github.com/a-safe-bet-research/framework)); jurisdiction-specific implementation architectures for the United Kingdom and the Netherlands; and a preregistered proof-of-concept implementation on a live online gambling platform ([`poc`](https://github.com/a-safe-bet-research/poc)).
 
 ## Ethics and data protection
 
-Ethical approval for the programme's empirical components was granted by the Erasmus University Rotterdam Ethics Committee (ETH2122-0810, ETH2324-0128, ETH2425-0364); approval history is in `governance/`. Components based solely on the published literature did not require ethical review under institutional procedures. Behavioural data used in the programme were collected through operator platforms as part of standard user activity, pseudonymised before analysis and processed within secure research environments. No directly identifiable personal data are accessed by the research team.
+Ethical approval for the programme's empirical components was granted by the Research Ethics Review Committee of the Department of Psychology, Education and Child Studies (DPECS), Erasmus School of Social and Behavioural Sciences, Erasmus University Rotterdam: ETH2122-0810 (approved 12 October 2022), with amendments ETH2324-0128 (26 October 2023) and ETH2425-0364 (16 January 2025), each valid for three years. Approval history is in `governance/`. The literature-based framework development involved no human participants and did not require formal ethics approval. Behavioural data used in the programme were collected through operator platforms as part of standard user activity, pseudonymised by the operators before transfer and processed within secure research environments at Erasmus University Rotterdam. No directly identifiable personal data are accessed by the research team. Participants in the qualitative components (interviews and focus groups) gave explicit informed consent.
 
 ## Historical record
 
@@ -30,4 +30,4 @@ See the [organisation profile](https://github.com/a-safe-bet-research).
 
 ## Licences
 
-Documentation and materials: CC BY-NC 4.0, see `LICENSE-materials.md`. Copyright Erasmus University Rotterdam. Commercial licences on request: gamblingresearch@essb.eur.nl.
+Documentation and materials: CC BY-NC-SA 4.0, see `LICENSE-materials.md`. Copyright Erasmus University Rotterdam. Commercial licences on request: gamblingresearch@essb.eur.nl.
