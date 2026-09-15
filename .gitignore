@@ -42,6 +42,7 @@ poc_output*/
 *.tar.gz
 *.gz
 !data/derived/**
+!data-documentation/**
 !materials/**/*.xlsx
 !materials/**/*.csv
 !protocol/**/*.xlsx
