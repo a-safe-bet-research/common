@@ -6,11 +6,11 @@ These rules apply to every repository in the `a-safe-bet-research` organisation.
 
 | Where | What |
 |---|---|
-| OSF Registries | Preregistrations. Registered before the confirmatory analyses are run on the real data; never edited afterwards. |
+| OSF Registries | Preregistrations. Registered before data access or analysis; never edited afterwards. |
 | Preprint server | The manuscript before publication. Not stored in any repository. |
 | GitHub (this organisation) | Working code, documentation and shareable materials, under version control. |
 | Zenodo | A fixed, DOI-stamped copy of a repository at each submission and publication. |
-| Data repository | Research data, held separately. Never in GitHub, except the aggregate or synthetic derived data allowed under section 7. |
+| Data repository | Research data, held separately. Never in GitHub. |
 
 The OSF projects created before September 2026 are a frozen historical record. Nothing on them is renamed or removed. New material goes to GitHub.
 
@@ -18,7 +18,7 @@ The OSF projects created before September 2026 are a frozen historical record. N
 
 One repository per study, named for its content in lowercase with hyphens: `framework`, `poc`, `player-perspectives`. No paper numbers, no dates, no author names. Programme-level material goes in `common`.
 
-Repositories start private. A repository becomes public when the associated manuscript is submitted. Only organisation owners change visibility.
+Repositories start private. A repository becomes public when the associated manuscript is submitted, unless the operator agreements or ethics approval require otherwise. Only organisation owners change visibility.
 
 ## 3. Folders
 
@@ -40,7 +40,7 @@ No `manuscript/` folder. Programme-level ethics approvals and the DMP live once,
 
 ## 4. File names
 
-Lowercase, `snake_case`, no spaces, no brackets. Scripts carry a two-digit run-order prefix (`00_config.R`, `01_build.R`). Dated documents put an ISO date first (`2026-07_analysis_preregistration.pdf`). No version suffixes on code; git is the version. The only permitted suffixes are on documents that record a submitted state: `_submitted`, `_r1`, `_accepted`.
+Lowercase, snake_case, no spaces, brackets or hyphens inside a name; extension kept. Every file name says which study it belongs to, because files travel alone: programme-level files in common carry asb_; study files carry asb_<repository>_, followed by the deposit number where a manuscript cites one, then the descriptor (asb_framework_01_1_search_strategy.pdf, asb_poc_02_3_glossary.pdf). New studies number by folder: 01 protocol, 02 materials, 03 data documentation, 04 code, 05 outputs. Scripts carry a two-digit run-order prefix. Dated documents put an ISO date first. No version suffixes on code; git is the version. Version suffixes are used only for filed documents that exist as distinct records: DMPs (asb_dmp_poc_v3.pdf) and submitted manuscripts (_submitted, _r1, _accepted). The title inside a document matches its file name. Where a file is also on OSF under a different name, the repository's file_map.md gives the mapping.
 
 ## 5. Code and environments
 
@@ -51,7 +51,6 @@ Analyses are R projects. Each `code/` folder contains an `renv.lock` (or the equ
 - Participant-level or account-level data in any form, including pseudonymised
 - Operator exports, extracts, or files named after an operator
 - Credentials, tokens, connection strings, server paths
-- The internal rename crosswalk that maps operator schema names to the project's neutral names
 - Anything covered by a data-sharing agreement that has not passed the data review
 
 The `.gitignore` blocks these by folder, file type and name pattern. It is a safety net, not the rule. Before every commit, check the file list. If in doubt, the file goes in `data/raw/`, which is ignored.
@@ -78,7 +77,7 @@ Every `v1.0.0` and later tag is a GitHub Release, which Zenodo archives automati
 ## 10. Licences
 
 Code (`code/`): PolyForm Noncommercial 1.0.0, in `LICENSE-code.md`.
-Everything else: CC BY-NC-SA 4.0, in `LICENSE-materials.md`.
+Everything else: CC BY-NC 4.0, in `LICENSE-materials.md`.
 Copyright holder: Erasmus University Rotterdam. Commercial licences on request via gamblingresearch@essb.eur.nl. Individual files may carry a more permissive licence if stated in the file.
 
 ## 11. Ownership and access
