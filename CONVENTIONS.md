@@ -77,7 +77,7 @@ Every `v1.0.0` and later tag is a GitHub Release, which Zenodo archives automati
 ## 10. Licences
 
 Code (`code/`): PolyForm Noncommercial 1.0.0, in `LICENSE-code.md`.
-Everything else: CC BY-NC 4.0, in `LICENSE-materials.md`.
+Everything else: CC BY-NC-SA 4.0, in `LICENSE-materials.md`.
 Copyright holder: Erasmus University Rotterdam. Commercial licences on request via gamblingresearch@essb.eur.nl. Individual files may carry a more permissive licence if stated in the file.
 
 ## 11. Ownership and access
